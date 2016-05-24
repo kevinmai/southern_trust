@@ -1,0 +1,319 @@
+@import "reset.css";
+
+body{
+	font-family: "Open Sans",sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1024px;
+}
+
+.clear {
+	clear: both
+}
+
+#mobile_layout {
+	display: none
+}
+
+@media all and (max-width: 1024px){
+	
+.container {
+	width: 100%
+}	
+
+
+}
+
+@media all and (max-width: 768px) {
+
+#desktop_layout {
+	display: none
+}
+	
+#mobile_layout {
+	display: block
+}	
+
+#mobile_header_wrapper {
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px
+}
+
+#mobile_home_logo {
+	display: block;
+	margin: 0 auto;
+}
+
+#mobile_home_logo a {
+	display: block;
+	position: relative;
+	left: 20%
+}
+
+#services_icon {
+	background: url("../images/icon-bg.png") center center;
+	height: auto;
+	padding: 20px 0
+}
+
+#services_button {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+#view_our_services a{
+	color: #fff;
+	display: block;
+	font-size: 700;
+	margin: 10px 0 0;
+	text-align: center;
+	text-decoration: none;
+}
+
+#cta_mobile {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-around
+}
+
+#call_now_mobile {
+	background: #811614;
+	padding: 10px 0;
+	-webkit-flex: 1;
+	flex: 1
+}
+
+#schedule_mobile {
+	background: #bd1f1e;
+	padding:10px 0;
+	-webkit-flex: 1;
+	flex: 1
+}
+
+#call_now_mobile a,
+#schedule_mobile a {
+	color: #fff;
+	display: block;
+	font-size: 1.3em;
+	font-weight: 800;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none
+}
+
+#call_now_mobile img,
+#schedule_mobile img {
+	margin: 0 5px 0 0
+}
+
+#coupon_mobile {
+	background: url("../images/coupon-bg.png") center center;
+	padding: 20px 0 
+}
+
+#coupon_mobile img {
+	display: block;
+	margin: 0 auto
+}
+
+#newsletter_form_mobile {
+	background: #1864ad;
+	box-sizing: border-box;
+	padding: 15px
+}
+
+#newsletter_form_mobile p {
+    font-size: 0.9em;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    padding: 0 0 10px;
+}
+
+#mobile_form_wrapper {
+	margin: 0 auto;
+	width: 275px
+}
+
+#email_newsletter {
+	border: none;
+	display: inline-block;
+	float: left;
+	font-size: 0.95em;
+	width: 60%;
+	padding: 7px;
+}
+
+#submit_newsletter {
+	background: #fdd002;
+	border: none;
+	float: left;
+	font-size: 1.1em;
+	padding: 5px;
+	width: 34%
+}
+
+#email_newsletter {
+	border: none;
+	display: inline-block;
+	float: left;
+	font-size: 0.95em;
+	width: 60%;
+	padding: 7px;
+}
+
+#submit_newsletter {
+	background: #fdd002;
+	border: none;
+	float: left;
+	font-size: 1.1em;
+	padding: 5px;
+	width: 34%
+}
+
+#trust_section {
+	background: url("../images/USP.png") center center;
+	padding: 10px 0
+}
+
+#trust_1 {
+	display: block;
+	margin: 0 auto
+}
+
+#indicators ul {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	margin: 10px 0 0
+}
+
+#indicators li {
+	background: #5282c0;
+	border-radius: 50%;
+	height: 10px;
+	margin: 0 3px;
+	width: 10px
+}
+
+#testimonials_mobile {
+	background: url("../images/testimonial-bg.png") center center; 
+	padding: 30px 0;
+}
+
+#reviews .title {
+	color: #fff;
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0 0 20px;
+	text-align: center
+}	
+
+#stars {
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.customer_review {
+	color: #fff;
+	font-size: 0.95em;
+	font-weight: 400;
+	line-height: 130%;
+	margin: 0 auto 10px;
+	text-align: center;
+	width: 280px
+}
+
+.customer_name {
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+}
+
+#mobile_footer{
+	background: #1864AD;
+	padding: 15px;
+}
+
+#social_media_button {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	/** padding: 0px 150px 0px; **/
+}
+
+#social_media_button img{
+	padding: 5px;
+}
+
+#mobile_address{
+	text-align: center;
+	color: #fff;
+	line-height: 110%;
+	font-size: .8em;
+	padding: 20px 0px 20px 0px;
+	width: 280px;
+	margin: 0 auto 10px;
+}
+
+#mobile_copyright{
+	text-align: center;
+	color: #fff;
+	line-height: 110%;
+	font-size: .7em;
+	padding: 0px 0px 20px 0px;
+	margin: 0 auto 10px;
+}
+}
+
+@media all and (max-width: 480px) {
+#services_button {
+	flex-wrap: wrap;
+	padding: 0 20px;
+}
+#services_button > div{
+	-webkit-flex: 2 1 50%;
+	flex: 2 1 50%
+}
+
+#services_button img {
+	display: block;
+	margin: 0 auto
+}
+
+#mobile_form_wrapper {
+	width: 100%
+}
+	
+#email_newsletter {
+	width: 60%;
+}
+
+#submit_newsletter {
+	padding: 5px;
+}
+
+}
+
+@media all and (max-width: 320px) {
+	
+}
